@@ -1,2 +1,2 @@
-# AutoSignMachineBadly
+# RustDemoTest
 a rust demo app
