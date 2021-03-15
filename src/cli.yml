@@ -1,0 +1,32 @@
+name: AutoSignMachineBadly
+version: "1.0"
+author: LunnLew <lunnlew@gmail.com>
+about: 一个自动执行任务的工具，通过它可以实现账号自动签到，自动领取权益等功能，帮助我们轻松升级
+args:
+  - config:
+      short: c
+      long: config
+      value_name: FILE
+      help: JSON配置文件路径
+      takes_value: true
+  - verbose:
+      short: v
+      long: verbose
+      multiple: true
+      help: 输出详细日志
+subcommands:
+    - unicom:
+        about: 联通签到任务
+        version: "0.1"
+        author: LunnLew <lunnlew@gmail.com>
+        args:
+            - user:
+                short: u
+                long: user
+                value_name: user
+                help: 登陆用户名
+            - password:
+                short: p
+                long: password
+                value_name: password
+                help: 登陆用户密码
